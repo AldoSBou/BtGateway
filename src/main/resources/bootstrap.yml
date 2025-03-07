@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: bt-gateway
+  cloud:
+    config:
+      uri: ${CONFIG.SERVER.HOSTNAME:http://localhost:9001}
+      profile: dev
+      enabled: true
